@@ -1,13 +1,13 @@
 import React from "react";
-// import intro from '../images/intro-bg.JPG';
-// import aboutMe from '../images/about2.jpg';
+import intro from '../images/intro-bg.JPG';
+import aboutMe from '../images/about2.jpg';
 import '../styles/images.css';
 
 function Main() {
-    // const backgroundImage = intro;
-    // const amoutMeImage = aboutMe;
-    const backgroundImage = null;
-    const amoutMeImage = null;
+    const backgroundImage = intro;
+    const amoutMeImage = aboutMe;
+    // const backgroundImage = null;
+    // const amoutMeImage = null;
     return (
         <div>
             <div style={{maxWidth:'100%', maxHeight: 'auto'}}>
