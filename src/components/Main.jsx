@@ -1,11 +1,15 @@
 import React from "react";
 import intro from '../images/intro-bg.JPG';
 import aboutMe from '../images/about2.jpg';
+import img1 from '../images/IMG_3672.JPG';
+import img2 from '../images/IMG_3753.JPG';
 import '../styles/images.css';
 
 function Main() {
     const backgroundImage = intro;
     const amoutMeImage = aboutMe;
+    const i1 = img1;
+    const i2 = img2;
     // const backgroundImage = null;
     // const amoutMeImage = null;
     return (
@@ -13,7 +17,7 @@ function Main() {
             <div style={{maxWidth:'100%', maxHeight: 'auto'}}>
                 {/* <Container maxWidth={false}> */}
                     <div className="mainImage">
-                    <img src={backgroundImage} alt = "Boston"/>
+                    <img src={i2} alt = "Boston"/>
                     <div className="textCenter">Hello</div>
                     </div>
                 {/* </Container> */}
