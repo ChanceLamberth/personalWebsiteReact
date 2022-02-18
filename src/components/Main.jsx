@@ -6,7 +6,7 @@ import img2 from '../images/IMG_3753.JPG';
 import '../styles/images.css';
 
 function Main() {
-    const backgroundImage = intro;
+    // const backgroundImage = intro;
     const amoutMeImage = aboutMe;
     const i1 = img1;
     const i2 = img2;
