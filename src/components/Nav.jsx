@@ -18,7 +18,7 @@ export default function NavBar() {
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static" className='navBar' style={{boxShadow: 'none'}}>
           <Toolbar style={{backgroundColor: 'white', height: "80px"}}>
-            <IconButton
+            {/* <IconButton
               size="large"
               edge="start"
               color="inherit"
@@ -27,7 +27,7 @@ export default function NavBar() {
               style={{color: "black"}}
             >
               <MenuIcon  onClick={menuIcon}/>
-            </IconButton>
+            </IconButton> */}
             <Typography className='headName' variant="h6" component="div" sx={{ flexGrow: 1 }} 
               style={{color: "black", textAlign: "center", fontSize: '1.6rem', fontWeight: '600'}}>
               Chance Lamberth

@@ -1,13 +1,15 @@
 
 import './App.css';
-import Main from './components/Main';
+import About from './components/About';
+import Works from './components/Works';
 import NavBar from './components/Nav';
 
 function App() {
   return (
     <div style={{backgroundColor: "white"}}>
       <NavBar/>
-      <Main/>
+      <About/>
+      <Works/>
     </div>
   );
 }

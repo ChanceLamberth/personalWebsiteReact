@@ -5,6 +5,11 @@ img {
     /* opacity: 25%; */
 }
 
+.container {
+    /* border-style: solid; */
+    position: relative;
+}
+
 .textCenter {
     position: relative;
     color: teal;
