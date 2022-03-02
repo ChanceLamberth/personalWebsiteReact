@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 
 function RightPicLeftText(props) {
         return (
-            <Container disableGutters={true}>
+            <Container maxWidth={false} style={{margin: '0', padding: '0', width: '100%'}}>
                 <div>
                     <div class='singlePictureWithTextRowRight'>
                         <img class="about" src={props.image} alt={props.altText} />
@@ -14,7 +14,7 @@ function RightPicLeftText(props) {
                     </div> */}
                     <Container disableGutters={false}>
                         <div>
-                            <p class='sectionContentAbout' style={{border:"solid"}}>
+                            <p class='sectionContentAbout'>
                                 {props.text}
                             </p>
                         </div>

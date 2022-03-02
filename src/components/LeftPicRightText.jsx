@@ -3,15 +3,11 @@ import { Container } from "@mui/material";
 
 function LeftPicRighText(props) {
         return (
-            <Container disableGutters={true}>
+            <Container maxWidth={false} style={{margin: '0', padding: '0', width: '100%'}}>
                 <div>
                     <div class='singlePictureWithTextRowLeft'>
                         <img class="about" src={props.image} alt={props.altText} />
                     </div>
-
-                    {/* <div>
-                        <p class='sectionTitleAbout'>About Me</p>
-                    </div> */}
                     <Container disableGutters={false}>
                         <div>
                             <p class='sectionContentAbout'>
