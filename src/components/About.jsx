@@ -3,14 +3,14 @@ import intro from '../images/intro-bg.JPG';
 import aboutMe from '../images/about2.jpg';
 import img1 from '../images/IMG_3672.JPG';
 import img2 from '../images/IMG_3753.JPG';
-import HCA from '../images/HCA.png';
-import Elphi from '../images/elphi.jpeg';
-import firstRobots from "../images/first.jpeg";
 import '../styles/images.css';
 import '../styles/about.css';
 import { Container } from "@mui/material";
 
 function About() {
+
+    // Google Hero image on W3school
+    // https://www.w3schools.com/howto/howto_css_hero_image.asp
 
     const amoutMeImage = aboutMe;
     const i1 = img1;
