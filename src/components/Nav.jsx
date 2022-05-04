@@ -3,15 +3,15 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+// import IconButton from '@mui/material/IconButton';
+// import MenuIcon from '@mui/icons-material/Menu';
 import '../styles/appBar.css';
 
 export default function NavBar() {
 
-  const menuIcon = () => {
-    console.log("This was clicked")
-  }
+  // const menuIcon = () => {
+  //   console.log("This was clicked")
+  // }
 
   return (
     <div>
@@ -29,7 +29,7 @@ export default function NavBar() {
               <MenuIcon  onClick={menuIcon}/>
             </IconButton> */}
             <Typography className='headName' variant="h6" component="div" sx={{ flexGrow: 1 }} 
-              style={{color: "black", textAlign: "center", fontSize: '1.6rem', fontWeight: '600'}}>
+              style={{color: "black", textAlign: "Center", fontSize: '1.6rem', fontWeight: '600'}}>
               Chance Lamberth
             </Typography>
             {/* <Button color="inherit" style={{color: "black", fontSize: '1.0rem', fontFamily: "Arial"}}>Login</Button> */}

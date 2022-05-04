@@ -1,56 +1,76 @@
-import React from "react";
-import intro from '../images/intro-bg.JPG';
-import aboutMe from '../images/about2.jpg';
+import React, {useState} from "react";
+// import intro from '../images/intro-bg.JPG';
+// import aboutMe from '../images/about2.jpg';
 import HCA from '../images/HCA.png';
 import Elphi from '../images/elphi.jpeg';
 import firstRobots from "../images/first.jpeg";
 import '../styles/images.css';
 import { Container } from "@mui/material";
-import LeftPicRighText from "./LeftPicRightText";
+import LeftPicRightText from "./LeftPicRightText";
 import RightPicLeftText from "./RightPicLeftText";
-import { display, padding } from "@mui/system";
+// import { display, padding } from "@mui/system";
 
 function Works() {
-    // HCA
-    const HCA_Picture = HCA;
-    const HCA_Text = <p>
-        2022
-        <br></br><br></br>
-        I am a cloud computing intern at HCA. I worked as a software engineer building scalable cloud
-        applications and monitoring cloud usage.
-        <br></br><br></br>
-        This is what I did there. This is what I did there. This is what I did there.
-        This is what I did there.This is what I did there. This is what I did there.
-        This is what I did there. This is what I did there. This is what I did there.
-        This is what I did there. This is what I did there.
-        This is what I did there. This is what I did there. This is what I did there.
-        This is what I did there.This is what I did there. This is what I did there.
-        This is what I did there. This is what I did there. This is what I did there.
-        This is what I did there. This is what I did there.
-    </p>
-    const HCA_Alt = "HCA Healthcare";
+    const [textDataHCA] = useState([]);
+    const [textDataFIRST] = useState([]);
+    const [textDataElphi] = useState([])
 
-    const FirstRobotics_picture = firstRobots;
-    const First_Text = <p>
-        2022
-        <br></br><br></br>
-        I was a mentor for a local high school team who designed a robot for the First Robotics
-        Competition.
-        <br></br><br></br>
-        This is what we accomplished in our first year...
-    </p>
-    const First_Alt = "First Robotics";
 
-    const Elphi_picture = Elphi;
-    const Elphi_text = <p>
-        2021
-        <br></br><br></br>
-        I worked as a front end React developer creating a user management application.
+    const HCA_Function = () => {
+        let HCA_PICTURE = HCA;
+        
+        let text1 = "2022"
+        let text2 = "I am a cloud computing intern at HCA. I worked as a software engineer building scalable cloud applications and monitoring cloud usage."
+        let text3 = "This is what I did there. This is what I did there."
+        textDataHCA.push(text1)
+        textDataHCA.push(text2)
+        textDataHCA.push(text3)
 
-        <br></br><br></br>
-        This is what I accomplished during my internship.
-    </p>
-    const Elphi_alt = "Elphi"
+        let HCA_ALT = "HCA Healthcare";
+
+        return (
+            <LeftPicRightText text={textDataHCA} altText={HCA_ALT} image={HCA_PICTURE}/>
+        );
+    }
+
+    const FIRST_Function = () => {
+        let FirstRobotics_picture = firstRobots;
+        let FirstRobotics_Alt = "First Robotics"
+
+        let text1 = "2022"
+        let text2 = "I was a mentor for a local high school team who designed a robot for the First Robotics Competition."
+        let text3 = "This is what we accomplished in our first year..."
+
+        textDataFIRST.push(text1)
+        textDataFIRST.push(text2)
+        textDataFIRST.push(text3)
+
+
+        return (
+            <div style={{maxWidth: "100%", display: 'grid'}}>
+                <RightPicLeftText text={textDataFIRST} altText={FirstRobotics_Alt} image={FirstRobotics_picture}/>
+            </div>
+        );
+    }
+
+    const ELPHI_Function = () => {
+        let Elphi_picture = Elphi;
+        let Elphi_alt = "Elphi";
+
+        let text1 = "2021"
+        let text2 = "I worked as a front end React developer creating a user management application."
+        let text3 = "This is what I accomplished during my internship."
+
+        textDataElphi.push(text1)
+        textDataElphi.push(text2)
+        textDataElphi.push(text3)
+
+        return (
+            <div style={{maxWidth: "100%", paddingBottom: "20px", display: "grid"}}>
+                <LeftPicRightText text={textDataElphi} altText={Elphi_alt} image={Elphi_picture}/>
+            </div>
+        )
+    }
     
 
 
@@ -65,25 +85,17 @@ function Works() {
             </div>
                 <div style={{maxWidth: "100%", display: "grid", paddingBottom: "20px"}}>
                     {/* <Container maxWidth={false} style={{margin: '0', padding: '0', width: '100%'}}> */}
-                        <LeftPicRighText image={HCA_Picture} text={HCA_Text} altText={HCA_Alt}/>
+                        {HCA_Function()}
                     {/* </Container> */}
                 </div>
             </Container>
 
             <Container maxWidth={false} style={{margin: '0', padding: '0', width: '100%'}}>
-                <div style={{maxWidth: "100%", display: 'grid'}}>
-                    {/* <Container> */}
-                        <RightPicLeftText image={FirstRobotics_picture} text={First_Text} altText={First_Alt}/>
-                    {/* </Container> */}
-                </div>
+                {FIRST_Function()}
             </Container>
 
             <Container maxWidth={false} style={{margin: '0', padding: '0', width: '100%'}}>
-                <div style={{maxWidth: "100%", paddingBottom: "20px", display: "grid"}}>
-                    {/* <Container> */}
-                    <LeftPicRighText image={Elphi_picture} text={Elphi_text} altText={Elphi_alt}/>
-                    {/* </Container> */}
-                </div>
+                {ELPHI_Function()}
             </Container>
         </div>
     );

@@ -39,6 +39,8 @@ img {
 .singlePictureWithTextRowLeft{
     width: 50%;
     float: left;
+    /* border: 5px solid #555; */
+    
 }
 
  .singlePictureWithTextRowRight {
@@ -46,6 +48,7 @@ img {
     /* height: auto; */
     width: 50%;
     float: right;
+    align-items: center;
 }
 
 .about {
@@ -57,29 +60,42 @@ img {
 }
 
 .sectionTitleAbout {
-    font-size: 3rem;
-    font-weight: 300;
-    line-height: 1.0;
-    text-align: left;
+    color: rgb(65, 65, 65);
+    display: block;
+    font-size: 48px;
+    font-family: "DIN W01 Medium", sans-serif;
+    /* font-size: 6rem; */
+    /* font-weight: 300; */
+    height: 116px;
+    line-height: 48px;
 }
 
 .sectionTitleWorks {
-    font-size: 3rem;
-    /* font-size: 6rem; */
-    font-weight: 300;
-    line-height: 1.0;
+    color: rgb(65, 65, 65);
+    display: block;
+    font-size: 48px;
+    font-family: "DIN W01 Medium", sans-serif;
+    /* font-weight: normal; */
+    height: 116px;
+    line-height: 48px;
     text-align: center;
+    /* background-color: aqua; */
     /* border-top: 2px solid black;
     border-bottom: 2px solid black; */
 }
 
 .sectionContentAbout {
-    width: 90%;
-    font-size: 1.6rem;
+    width: 361;
+    /* width: 90%; */
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
     font-weight: 300;
+    height: 256px;
+    line-height: 30px;
     margin: 24px 0;
     text-align: left;
     display: contents;
+    color: rgb(37, 37, 37);
     /* white-space: nowrap; */
     /* text-overflow: ellipsis; */
 }
